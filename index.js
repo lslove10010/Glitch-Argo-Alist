@@ -1,3 +1,9 @@
+const NEZHA_SERVER = process.env.NEZHA_SERVER || 'nz.abc.cn';  // 哪吒3个变量不全不运行
+const NEZHA_PORT = process.env.NEZHA_PORT || '5555';           // 哪吒端口为
+const NEZHA_KEY = process.env.NEZHA_KEY || '';                 // 哪吒客户端密钥
+const NEZHA_TLS = process.env.NEZHA_TLS || '';                 // 输入1使用TLS，留空则表示不使用
+const ARGO_DOMAIN = process.env.ARGO_DOMAIN || '';             // 固定隧道域名
+const ARGO_AUTH = process.env.ARGO_AUTH || '';                 // 固定隧道json或token
 const url = "http://127.0.0.1";
 const port = process.env.PORT || 3000; /* 当容器平台分配不规则端口时,此处需修改为分配端口 */
 const express = require("express");
